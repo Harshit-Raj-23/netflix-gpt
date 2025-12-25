@@ -1,7 +1,12 @@
-# Steps
+# NetflixGPT
 
 - Setup project using CRA
 - Configured TailwindCSS
+- Routes created
+- Login page
+- Sign Up page
+- Form validation
+- useRef Hook
 
 # Features
 
