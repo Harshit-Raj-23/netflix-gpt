@@ -6,3 +6,14 @@ export const BG_URL =
 
 export const USER_AVATAR =
   "https://testingbot.com/free-online-tools/random-avatar/200?u=";
+
+export const TMDB_API = "https://api.themoviedb.org/3/movie/now_playing?page=1";
+
+export const API_OPTIONS = {
+  method: "GET",
+  headers: {
+    accept: "application/json",
+    Authorization:
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxYWVmMThmZjAyZTk4ZTliYTY1MWM1MzNiMjA5ZTkxZiIsIm5iZiI6MTc2NjgzMzQ1My41Nywic3ViIjoiNjk0ZmJkMmQxYmNhYThmODg5MDczMzQyIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.zc7ZJsoiHSSY9700KZqdMKIA7YHAtGIXbBx9KSj_tZI",
+  },
+};
