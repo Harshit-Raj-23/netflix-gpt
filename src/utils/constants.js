@@ -13,8 +13,7 @@ export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxYWVmMThmZjAyZTk4ZTliYTY1MWM1MzNiMjA5ZTkxZiIsIm5iZiI6MTc2NjgzMzQ1My41Nywic3ViIjoiNjk0ZmJkMmQxYmNhYThmODg5MDczMzQyIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.zc7ZJsoiHSSY9700KZqdMKIA7YHAtGIXbBx9KSj_tZI",
+    Authorization: "Bearer " + process.env.REACT_APP_TMDB_API_KEY,
   },
 };
 
@@ -25,3 +24,6 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "hindi", name: "हिंदी" },
   { identifier: "spanish", name: "español" },
 ];
+
+export const MODEL_INSTRUCTION =
+  "Act as a movie recommendation system where you have to recommend 5 best movies for the query. Give me the name of the movies only in the format I specified in example. Example - movie1, movie2, movie3, movie4, movie5";

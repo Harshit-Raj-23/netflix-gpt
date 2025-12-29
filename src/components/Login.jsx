@@ -88,7 +88,7 @@ const Login = () => {
   return (
     <div>
       <Header />
-      <div className="absolute">
+      <div className="fixed">
         <img src={BG_URL} alt="BG-IMG" />
       </div>
       <form
