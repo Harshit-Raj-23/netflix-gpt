@@ -55,3 +55,7 @@
 - NetflixGPT
   -Search bar
   -Movie suggestion
+
+# Upcoming
+
+- Custom hook for trending movies
