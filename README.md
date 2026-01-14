@@ -37,6 +37,11 @@
 - GPT Search Page
 - GPT Search Bar
 - (BONUS) Multi-language feature in our App
+- Get Gemini Open Key
+- Gpt Search API Call
+- Fetched gptMoviesSuggestion from TMDB
+- Created gptSlice and added data to it
+- Reused MovieList component to make suggestion container
 
 # Features
 
