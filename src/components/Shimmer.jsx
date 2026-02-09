@@ -4,7 +4,7 @@ const Shimmer = () => {
   const shimmerCards = Array(12).fill(0);
 
   return (
-    <div className="bg-black min-h-screen p-4 md:p-8">
+    <div className="bg-black m-4 min-h-screen p-4 md:p-8">
       <div className="w-64 h-8 bg-gray-800 rounded mb-6 animate-pulse"></div>
 
       <div className="flex flex-wrap justify-center gap-6">

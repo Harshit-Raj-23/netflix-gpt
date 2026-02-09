@@ -1,9 +1,14 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import MovieList from "./MovieList.jsx";
+import Shimmer from "./Shimmer.jsx";
 
 const GptMovieSuggestion = () => {
-  const { movieNames, movieResults } = useSelector((store) => store.gpt);
+  const { movieNames, movieResults, isLoading } = useSelector(
+    (store) => store.gpt,
+  );
+
+  if (isLoading) return <Shimmer />;
   if (!movieNames) return;
 
   return (

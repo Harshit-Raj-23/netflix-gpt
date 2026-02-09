@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import LANG from "../utils/languageConstants.js";
 import { useDispatch, useSelector } from "react-redux";
 import getGenAiResponse from "../utils/getGenAiResponse.js";
+import { setLoading } from "../utils/gptSlice.js";
 
 const GptSearchBar = () => {
   const dispatch = useDispatch();
@@ -9,7 +10,14 @@ const GptSearchBar = () => {
   const langKey = useSelector((store) => store.config.lang);
 
   const handleGptSearchButton = async () => {
-    await getGenAiResponse(searchText?.current?.value, dispatch);
+    dispatch(setLoading(true));
+    try {
+      await getGenAiResponse(searchText?.current?.value, dispatch);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      dispatch(setLoading(false));
+    }
   };
 
   return (
